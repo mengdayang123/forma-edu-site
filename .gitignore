@@ -1,0 +1,4 @@
+.DS_Store
+.qa/
+.siteops/stage/
+.siteops/hostinger.env
