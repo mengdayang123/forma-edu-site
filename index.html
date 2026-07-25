@@ -3,333 +3,72 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Naturaquell residential inverter swimming pool heat pump solutions for global B2B partners."
-    />
+    <meta name="description" content="Naturaquell residential pool heat pumps. Model-led B2B selection for distributors, pool builders and installation partners." />
     <title>Naturaquell | Residential Pool Heat Pumps</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet" />
     <style>
-      :root {
-        --ink: #071a2a;
-        --navy: #08283c;
-        --blue: #0d6eba;
-        --aqua: #55d7d2;
-        --lime: #9acb48;
-        --paper: #ffffff;
-        --mist: #eef5f7;
-        --line: #d7e4e8;
-        --text-muted: #577080;
-        --shadow: 0 18px 48px rgba(6, 34, 53, 0.11);
-      }
-
-      * { box-sizing: border-box; }
-      html { scroll-behavior: smooth; }
-      body {
-        margin: 0;
-        color: var(--ink);
-        background: var(--paper);
-        font-family: "DM Sans", Arial, sans-serif;
-      }
-      a { color: inherit; text-decoration: none; }
-      button, input, select, textarea { font: inherit; }
-      button { cursor: pointer; }
-
-      .container { width: min(1180px, calc(100% - 40px)); margin: 0 auto; }
-      .display { font-family: "Manrope", Arial, sans-serif; }
-      .eyebrow {
-        margin: 0 0 14px;
-        color: var(--blue);
-        font-size: 12px;
-        font-weight: 800;
-        letter-spacing: .13em;
-        text-transform: uppercase;
-      }
-      .btn {
-        display: inline-flex;
-        min-height: 46px;
-        align-items: center;
-        justify-content: center;
-        border: 1px solid transparent;
-        border-radius: 6px;
-        padding: 0 20px;
-        font-weight: 700;
-        transition: transform .18s ease, box-shadow .18s ease, background .18s ease;
-      }
-      .btn:hover { transform: translateY(-2px); }
-      .btn-primary { background: var(--blue); color: white; box-shadow: 0 10px 28px rgba(13,110,186,.25); }
-      .btn-primary:hover { background: #095b9e; }
-      .btn-light { background: white; color: var(--ink); }
-      .btn-outline { border-color: rgba(255,255,255,.48); color: white; background: transparent; }
-
-      .site-header {
-        position: absolute;
-        z-index: 10;
-        top: 0;
-        left: 0;
-        width: 100%;
-        color: white;
-      }
-      .nav {
-        display: flex;
-        min-height: 84px;
-        align-items: center;
-        justify-content: space-between;
-        gap: 28px;
-        border-bottom: 1px solid rgba(255,255,255,.18);
-      }
-      .brand { display: flex; align-items: center; gap: 11px; }
-      .brand-mark {
-        display: grid;
-        width: 38px;
-        height: 38px;
-        place-items: center;
-        border-radius: 6px;
-        background: white;
-        color: var(--blue);
-        font-family: "Manrope", sans-serif;
-        font-weight: 800;
-        letter-spacing: -.05em;
-      }
-      .brand-name { font-family: "Manrope", sans-serif; font-size: 19px; font-weight: 800; }
-      .brand-sub { display: block; margin-top: 1px; color: #b7eef0; font-size: 10px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
-      .desktop-nav { display: flex; gap: 28px; font-size: 14px; font-weight: 600; }
-      .desktop-nav a { opacity: .88; }
-      .desktop-nav a:hover { color: var(--aqua); opacity: 1; }
-      .nav-toggle { display: none; border: 0; background: transparent; color: white; font-size: 24px; }
-      .mobile-menu { display: none; }
-
-      .hero {
-        display: flex;
-        min-height: 760px;
-        align-items: flex-end;
-        padding: 132px 0 70px;
-        color: white;
-        background:
-          linear-gradient(90deg, rgba(5,21,34,.91) 0%, rgba(5,21,34,.71) 44%, rgba(5,21,34,.18) 76%),
-          url("https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=2200&q=88") center/cover;
-      }
-      .hero-content { max-width: 710px; }
-      .hero h1 { max-width: 680px; margin: 0; font-size: clamp(42px, 6vw, 78px); line-height: 1.02; letter-spacing: -.045em; }
-      .hero p { max-width: 590px; margin: 23px 0 31px; color: #e4f1f2; font-size: 19px; line-height: 1.65; }
-      .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
-      .hero-proof { display: flex; flex-wrap: wrap; gap: 22px; margin-top: 56px; }
-      .hero-proof span { border-left: 2px solid var(--aqua); padding-left: 12px; color: #d9eced; font-size: 13px; font-weight: 600; }
-
-      section { padding: 112px 0; }
-      .section-heading { display: grid; grid-template-columns: minmax(0, .78fr) minmax(280px, .58fr); gap: 70px; align-items: end; }
-      h2 { margin: 0; font-size: clamp(32px, 4vw, 52px); line-height: 1.1; letter-spacing: -.04em; }
-      .section-intro { margin: 0; color: var(--text-muted); font-size: 17px; line-height: 1.7; }
-
-      .product-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; margin-top: 54px; }
-      .product-card { display: grid; min-height: 410px; grid-template-columns: .88fr 1.12fr; overflow: hidden; border: 1px solid var(--line); border-radius: 8px; background: white; box-shadow: 0 4px 15px rgba(2,37,57,.04); transition: transform .2s ease, box-shadow .2s ease; }
-      .product-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
-      .product-image { position: relative; overflow: hidden; background: #c8dbe0; }
-      .product-image img { width: 100%; height: 100%; object-fit: cover; filter: saturate(.78) contrast(1.03); }
-      .product-image::after { position: absolute; inset: 0; content: ""; background: linear-gradient(180deg, transparent 40%, rgba(5,33,45,.42)); }
-      .series-tag { position: absolute; z-index: 1; right: 14px; bottom: 14px; color: white; font-family: "Manrope", sans-serif; font-size: 14px; font-weight: 800; letter-spacing: .08em; }
-      .product-content { display: flex; flex-direction: column; padding: 34px 30px 28px; }
-      .product-content h3 { margin: 0; font-family: "Manrope", sans-serif; font-size: 28px; letter-spacing: -.035em; }
-      .product-content p { margin: 16px 0; color: var(--text-muted); font-size: 15px; line-height: 1.65; }
-      .product-list { display: grid; gap: 8px; margin: auto 0 23px; padding: 0; list-style: none; color: #365261; font-size: 13px; font-weight: 600; }
-      .product-list li::before { margin-right: 8px; color: var(--lime); content: "●"; }
-      .text-link { color: var(--blue); font-size: 14px; font-weight: 800; }
-      .text-link:hover { color: #074c85; }
-
-      .tech { background: var(--navy); color: white; }
-      .tech-layout { display: grid; grid-template-columns: .87fr 1.13fr; gap: 84px; align-items: center; }
-      .tech .eyebrow { color: var(--aqua); }
-      .tech-copy > p:not(.eyebrow) { max-width: 470px; margin: 20px 0 0; color: #c4d5dd; font-size: 17px; line-height: 1.7; }
-      .tech-points { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; overflow: hidden; border: 1px solid rgba(255,255,255,.14); background: rgba(255,255,255,.14); border-radius: 8px; }
-      .tech-point { min-height: 176px; padding: 26px; background: #0c3046; }
-      .tech-point b { display: block; margin-bottom: 10px; color: white; font-family: "Manrope", sans-serif; font-size: 18px; }
-      .tech-point span { color: #b7cad2; font-size: 14px; line-height: 1.6; }
-
-      .application { background: var(--mist); }
-      .application-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
-      .application-media { min-height: 560px; overflow: hidden; border-radius: 8px; background: #c8e2e2; }
-      .application-media img { width: 100%; height: 100%; object-fit: cover; }
-      .application-list { display: grid; gap: 0; margin-top: 30px; border-top: 1px solid var(--line); }
-      .application-item { display: grid; grid-template-columns: 54px 1fr; gap: 16px; align-items: center; padding: 20px 0; border-bottom: 1px solid var(--line); }
-      .application-num { color: var(--blue); font-family: "Manrope", sans-serif; font-size: 14px; font-weight: 800; }
-      .application-item b { display: block; font-size: 16px; }
-      .application-item span { display: block; margin-top: 4px; color: var(--text-muted); font-size: 14px; line-height: 1.55; }
-
-      .about-layout { display: grid; grid-template-columns: .9fr 1.1fr; gap: 70px; align-items: center; }
-      .about-art { position: relative; min-height: 430px; overflow: hidden; border-radius: 8px; }
-      .about-art img { width: 100%; height: 100%; object-fit: cover; }
-      .about-art::after { position: absolute; inset: 0; content: ""; background: linear-gradient(0deg, rgba(7,26,42,.53), transparent 48%); }
-      .about-copy p:not(.eyebrow) { color: var(--text-muted); font-size: 17px; line-height: 1.72; }
-      .principles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 30px; }
-      .principle { border-left: 2px solid var(--aqua); padding: 0 14px; }
-      .principle b { display: block; font-family: "Manrope", sans-serif; font-size: 15px; }
-      .principle span { display: block; margin-top: 5px; color: var(--text-muted); font-size: 13px; line-height: 1.5; }
-
-      .faq { background: var(--mist); }
-      .faq-layout { display: grid; grid-template-columns: .72fr 1.28fr; gap: 70px; }
-      details { border-bottom: 1px solid var(--line); padding: 20px 0; }
-      summary { position: relative; padding-right: 34px; color: var(--ink); cursor: pointer; font-size: 17px; font-weight: 700; list-style: none; }
-      summary::-webkit-details-marker { display: none; }
-      summary::after { position: absolute; right: 1px; top: -3px; color: var(--blue); content: "+"; font-size: 25px; font-weight: 400; }
-      details[open] summary::after { content: "−"; }
-      details p { max-width: 690px; margin: 14px 0 0; color: var(--text-muted); font-size: 15px; line-height: 1.7; }
-
-      .contact { background: var(--blue); color: white; }
-      .contact-layout { display: grid; grid-template-columns: .72fr 1.28fr; gap: 72px; align-items: start; }
-      .contact .eyebrow { color: #c9f4f0; }
-      .contact-copy p:not(.eyebrow) { color: #d9efff; font-size: 17px; line-height: 1.7; }
-      .form { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; padding: 28px; border-radius: 8px; background: white; color: var(--ink); box-shadow: var(--shadow); }
-      .form label { display: grid; gap: 7px; color: #345261; font-size: 12px; font-weight: 800; letter-spacing: .05em; text-transform: uppercase; }
-      .form label.full { grid-column: 1 / -1; }
-      .form input, .form select, .form textarea { width: 100%; border: 1px solid #cad9df; border-radius: 5px; padding: 12px; color: var(--ink); background: white; font-size: 15px; outline: 0; }
-      .form textarea { min-height: 110px; resize: vertical; }
-      .form input:focus, .form select:focus, .form textarea:focus { border-color: var(--blue); box-shadow: 0 0 0 3px rgba(13,110,186,.11); }
-      .form .btn { grid-column: 1 / -1; justify-self: start; }
-      .form-message { display: none; grid-column: 1 / -1; margin: 0; color: #087554; font-size: 14px; font-weight: 700; }
-      .form-message.visible { display: block; }
-
-      footer { padding: 42px 0; background: #061521; color: #b6cad1; }
-      .footer-row { display: flex; align-items: center; justify-content: space-between; gap: 24px; font-size: 13px; }
-      .footer-row .brand-name { color: white; }
-      .footer-links { display: flex; flex-wrap: wrap; gap: 20px; }
-      .footer-links a:hover { color: white; }
-
-      @media (max-width: 1024px) {
-        .container { width: calc(100vw - 32px); max-width: 620px; margin-inline: auto; }
-        .site-header { position: absolute; background: rgba(6,21,33,.46); backdrop-filter: blur(12px); }
-        .nav { min-height: 68px; border: 0; }
-        .desktop-nav, .nav .btn { display: none; }
-        .nav-toggle { display: block; }
-        .mobile-menu { display: none; position: absolute; top: 68px; left: 0; width: 100%; padding: 18px 20px 22px; background: #071a2a; }
-        .mobile-menu.open { display: grid; gap: 16px; }
-        .mobile-menu a { color: white; font-size: 15px; font-weight: 700; }
-        .hero { min-height: 680px; padding: 130px 0 48px; background-position: 63% center; }
-        .hero-content { width: 100%; max-width: 100%; min-width: 0; }
-        .hero h1 { max-width: 100%; font-size: clamp(43px, 13vw, 63px); overflow-wrap: anywhere; }
-        .hero p { font-size: 17px; }
-        .hero-proof { gap: 12px; margin-top: 36px; }
-        .hero-proof span { width: calc(50% - 6px); font-size: 11px; }
-        section { padding: 76px 0; }
-        .section-heading, .tech-layout, .application-layout, .about-layout, .faq-layout, .contact-layout { grid-template-columns: 1fr; gap: 32px; }
-        .section-heading > *, .tech-layout > *, .application-layout > *, .about-layout > *, .faq-layout > *, .contact-layout > * { min-width: 0; }
-        h2 { overflow-wrap: anywhere; }
-        .product-grid { grid-template-columns: 1fr; margin-top: 36px; }
-        .product-card { min-height: 0; grid-template-columns: 1fr; }
-        .product-image { min-height: 230px; }
-        .tech-points { grid-template-columns: 1fr; }
-        .application-media { min-height: 380px; }
-        .principles { grid-template-columns: 1fr; gap: 16px; }
-        .footer-row { align-items: flex-start; flex-direction: column; }
-      }
-      @media (max-width: 480px) {
-        .form { grid-template-columns: 1fr; padding: 20px; }
-        .form label.full, .form .btn, .form-message { grid-column: auto; }
-        .hero-actions .btn { width: 100%; }
-      }
-      @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; } }
+      :root { --ink:#071b29; --ink-2:#0b2c3c; --blue:#0b6b9e; --cyan:#77e1dc; --green:#b4d950; --ice:#eaf3f4; --paper:#fbfdfd; --muted:#5d7480; --line:#cfdee1; --shadow:0 24px 64px rgba(3,29,42,.16); }
+      * { box-sizing:border-box; } html { scroll-behavior:smooth; } body { margin:0; background:var(--paper); color:var(--ink); font-family:"DM Sans",Arial,sans-serif; } a { color:inherit; text-decoration:none; } button,input,select,textarea { font:inherit; } button { cursor:pointer; } img { display:block; max-width:100%; }
+      .container { width:min(1180px,calc(100% - 48px)); margin:0 auto; } .display { font-family:Manrope,Arial,sans-serif; } .mono { font-family:"DM Mono",monospace; } .eyebrow { margin:0 0 16px; color:var(--blue); font:500 11px/1 "DM Mono",monospace; letter-spacing:.1em; text-transform:uppercase; }
+      .btn { display:inline-flex; min-height:48px; align-items:center; justify-content:center; gap:10px; border:1px solid transparent; border-radius:4px; padding:0 18px; font-size:14px; font-weight:700; transition:transform .22s ease,background .22s ease,border-color .22s ease; } .btn:hover { transform:translateY(-2px); } .btn-primary { background:var(--green); color:var(--ink); } .btn-primary:hover { background:#c4e762; } .btn-dark { background:var(--ink); color:white; } .btn-dark:hover { background:#123a4e; } .btn-ghost { border-color:rgba(255,255,255,.5); color:white; } .arrow { font-size:19px; line-height:0; }
+      .site-header { position:absolute; z-index:20; top:0; width:100%; color:white; } .nav { display:flex; min-height:82px; align-items:center; justify-content:space-between; gap:24px; border-bottom:1px solid rgba(255,255,255,.18); } .brand { display:flex; align-items:center; gap:11px; } .brand-mark { display:grid; width:37px; height:37px; place-items:center; border:1px solid rgba(255,255,255,.68); border-radius:50%; font:700 14px/1 Manrope,sans-serif; } .brand-name { display:block; font:700 19px/1 Manrope,sans-serif; } .brand-sub { display:block; margin-top:4px; color:#b5dce0; font:500 9px/1 "DM Mono",monospace; letter-spacing:.09em; text-transform:uppercase; } .desktop-nav { display:flex; gap:27px; align-items:center; font-size:13px; font-weight:600; } .desktop-nav a { opacity:.82; } .desktop-nav a:hover { color:var(--cyan); opacity:1; } .menu-button { display:none; border:0; background:transparent; color:white; font-size:25px; } .mobile-menu { display:none; }
+      .hero { position:relative; display:flex; min-height:780px; align-items:flex-end; overflow:hidden; padding:150px 0 58px; color:white; background:#0d3c52 url("https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=2400&q=88") center/cover; } .hero::before { position:absolute; inset:0; content:""; background:linear-gradient(90deg,rgba(2,18,28,.94) 0%,rgba(4,29,42,.78) 43%,rgba(5,35,47,.20) 76%),linear-gradient(0deg,rgba(1,18,28,.56),transparent 45%); } .hero .container { position:relative; z-index:1; } .hero-main { display:grid; grid-template-columns:minmax(0,1fr) 330px; align-items:end; gap:54px; } .hero-copy { max-width:700px; } .hero h1 { max-width:710px; margin:0; font-size:clamp(45px,6vw,76px); line-height:1.05; letter-spacing:0; } .hero-copy p { max-width:570px; margin:23px 0 30px; color:#d7e9ea; font-size:18px; line-height:1.65; } .hero-actions { display:flex; flex-wrap:wrap; gap:11px; } .hero-card { overflow:hidden; border:1px solid rgba(255,255,255,.26); border-radius:6px; background:rgba(5,29,42,.68); box-shadow:0 16px 48px rgba(0,0,0,.16); backdrop-filter:blur(10px); } .hero-card-head { display:flex; align-items:center; justify-content:space-between; padding:16px 17px; border-bottom:1px solid rgba(255,255,255,.2); color:#cce4e5; font:500 10px/1 "DM Mono",monospace; letter-spacing:.07em; text-transform:uppercase; } .live-dot { width:8px; height:8px; border-radius:50%; background:var(--green); box-shadow:0 0 0 5px rgba(180,217,80,.13); } .hero-stat { padding:20px 19px 17px; } .hero-stat strong { display:block; color:white; font:700 48px/1 Manrope,sans-serif; } .hero-stat span { display:block; margin-top:8px; color:#c6dbde; font-size:13px; line-height:1.5; } .hero-card-grid { display:grid; grid-template-columns:1fr 1fr; border-top:1px solid rgba(255,255,255,.2); } .hero-card-grid div { padding:15px 17px; } .hero-card-grid div + div { border-left:1px solid rgba(255,255,255,.2); } .hero-card-grid b { display:block; color:white; font-size:18px; } .hero-card-grid span { display:block; margin-top:5px; color:#b9d3d7; font-size:10px; line-height:1.35; }
+      .hero-foot { display:flex; flex-wrap:wrap; gap:0; margin-top:67px; border-top:1px solid rgba(255,255,255,.24); } .hero-foot div { min-width:195px; padding:16px 28px 0 0; } .hero-foot div + div { padding-left:28px; border-left:1px solid rgba(255,255,255,.24); } .hero-foot b { display:block; color:white; font-size:14px; } .hero-foot span { display:block; margin-top:4px; color:#c3d5d8; font-size:12px; }
+      .intro-band { background:var(--ice); } .intro-grid { display:grid; grid-template-columns:.9fr 1.1fr; gap:70px; padding:55px 0; align-items:center; } .intro-grid h2 { margin:0; font-size:clamp(27px,3.2vw,41px); line-height:1.15; } .intro-grid p { margin:0; color:var(--muted); font-size:16px; line-height:1.7; } .intro-grid strong { color:var(--ink); }
+      section { padding:112px 0; } h2 { margin:0; font-size:clamp(34px,4vw,53px); line-height:1.08; letter-spacing:0; } .section-copy { max-width:660px; margin:18px 0 0; color:var(--muted); font-size:17px; line-height:1.7; }
+      .range-top { display:grid; grid-template-columns:1fr auto; align-items:end; gap:32px; } .tabs { display:flex; flex-wrap:wrap; justify-content:flex-end; gap:7px; } .tab { min-height:37px; border:1px solid var(--line); border-radius:3px; padding:0 13px; color:#46616c; background:white; font:500 11px/1 "DM Mono",monospace; transition:.2s; } .tab:hover,.tab.active { border-color:var(--ink); background:var(--ink); color:white; }
+      .product-stage { display:grid; grid-template-columns:1.02fr .98fr; min-height:505px; margin-top:46px; overflow:hidden; border-radius:7px; background:var(--ink); color:white; } .product-visual { position:relative; display:flex; align-items:flex-end; min-height:430px; overflow:hidden; padding:38px; background:linear-gradient(135deg,#164a60,#07222f 70%); } .product-visual::before { position:absolute; inset:0; content:""; opacity:.45; background:linear-gradient(130deg,transparent 0 45%,rgba(119,225,220,.16) 45% 46%,transparent 46% 55%,rgba(180,217,80,.11) 55% 56%,transparent 56%); } .product-visual::after { position:absolute; z-index:0; right:-90px; bottom:-96px; width:430px; height:430px; border:1px solid rgba(119,225,220,.34); border-radius:50%; content:""; box-shadow:0 0 0 40px rgba(119,225,220,.03),0 0 0 80px rgba(119,225,220,.025); } .product-meta { position:relative; z-index:1; max-width:290px; } .product-meta p { margin:0 0 13px; color:var(--cyan); font:500 10px/1 "DM Mono",monospace; letter-spacing:.1em; text-transform:uppercase; } .product-meta h3 { margin:0; font:700 42px/1.05 Manrope,sans-serif; } .product-meta span { display:block; margin-top:14px; color:#c9d8dc; font-size:14px; line-height:1.55; } .heat-pump { position:absolute; z-index:1; right:12%; bottom:56px; width:min(48%,340px); aspect-ratio:1.36; border:7px solid #c8dcdf; border-radius:9px; background:linear-gradient(145deg,#e7f2f3,#91b2b8); box-shadow:-23px 29px 0 rgba(0,0,0,.22),0 27px 42px rgba(0,0,0,.28); transform:perspective(850px) rotateY(-15deg) rotateX(3deg); } .heat-pump .fan { position:absolute; left:12%; top:17%; width:48%; aspect-ratio:1; border:9px solid #355a65; border-radius:50%; background:repeating-radial-gradient(circle,#224551 0 5px,#809ea4 6px 12px); } .heat-pump .screen { position:absolute; right:14%; top:19%; width:21%; height:14%; border-radius:2px; background:#153845; box-shadow:inset 0 0 0 2px rgba(255,255,255,.15); } .heat-pump .slat { position:absolute; right:13%; bottom:17%; width:23%; height:4px; background:#506e77; box-shadow:0 9px #506e77,0 18px #506e77; } .heat-pump .leg { position:absolute; bottom:-17px; width:18%; height:17px; border-radius:0 0 3px 3px; background:#8ea7aa; } .heat-pump .leg:first-of-type { left:13%; } .heat-pump .leg:last-of-type { right:13%; }
+      .spec-panel { display:flex; flex-direction:column; padding:44px 43px 36px; background:#f6fbfb; color:var(--ink); } .spec-kicker { margin:0; color:var(--blue); font:500 10px/1 "DM Mono",monospace; letter-spacing:.1em; text-transform:uppercase; } .spec-panel h3 { margin:12px 0 8px; font:700 31px/1.15 Manrope,sans-serif; } .spec-panel > p { margin:0; color:var(--muted); font-size:14px; line-height:1.55; } .spec-grid { display:grid; grid-template-columns:1fr 1fr; gap:0; margin:27px 0; border-top:1px solid var(--line); border-left:1px solid var(--line); } .spec-grid div { min-height:83px; padding:14px; border-right:1px solid var(--line); border-bottom:1px solid var(--line); background:white; } .spec-grid span { display:block; color:var(--muted); font:500 9px/1.35 "DM Mono",monospace; text-transform:uppercase; } .spec-grid b { display:block; margin-top:8px; font:700 17px/1.1 Manrope,sans-serif; } .test-note { margin-top:auto; border-left:2px solid var(--green); padding-left:13px; color:#526970; font-size:12px; line-height:1.55; }
+      .series-strip { display:grid; grid-template-columns:1.12fr .88fr; gap:1px; margin-top:1px; background:var(--line); } .series-strip > div { padding:24px 28px; background:var(--paper); } .series-strip h3 { margin:0; font:700 16px/1.2 Manrope,sans-serif; } .series-strip p { margin:8px 0 0; color:var(--muted); font-size:13px; line-height:1.55; } .series-names { display:flex; flex-wrap:wrap; gap:8px; align-content:center; } .series-names span { border:1px solid var(--line); border-radius:3px; padding:7px 9px; color:#385963; font:500 10px/1 "DM Mono",monospace; }
+      .selection { position:relative; overflow:hidden; color:white; background:#0a2838 url("https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?auto=format&fit=crop&w=2000&q=80") center/cover; } .selection::before { position:absolute; inset:0; content:""; background:linear-gradient(90deg,rgba(3,25,37,.96),rgba(3,25,37,.86)); } .selection .container { position:relative; } .selection .eyebrow { color:var(--cyan); } .selection .section-copy { color:#c7d8db; } .selection-grid { display:grid; grid-template-columns:.72fr 1.28fr; gap:64px; align-items:start; } .selection-steps { display:grid; gap:1px; margin-top:36px; border:1px solid rgba(255,255,255,.18); background:rgba(255,255,255,.18); } .selection-step { display:grid; grid-template-columns:44px 1fr; gap:15px; padding:19px; background:rgba(7,39,54,.86); } .selection-step strong { color:var(--green); font:500 12px/1 "DM Mono",monospace; } .selection-step b { display:block; color:white; font-size:16px; } .selection-step span { display:block; margin-top:5px; color:#c1d1d5; font-size:13px; line-height:1.55; } .selection-card { padding:34px; border-radius:6px; background:rgba(226,244,243,.96); color:var(--ink); box-shadow:var(--shadow); } .selection-card h3 { margin:0; font:700 28px/1.17 Manrope,sans-serif; } .selection-card p { margin:11px 0 24px; color:var(--muted); font-size:14px; line-height:1.6; } .check-list { display:grid; grid-template-columns:1fr 1fr; gap:0; border-top:1px solid var(--line); border-left:1px solid var(--line); } .check-list div { min-height:78px; padding:13px; border-right:1px solid var(--line); border-bottom:1px solid var(--line); background:rgba(255,255,255,.62); } .check-list b { display:block; font-size:13px; } .check-list span { display:block; margin-top:5px; color:var(--muted); font-size:11px; line-height:1.45; }
+      .evidence-layout { display:grid; grid-template-columns:.82fr 1.18fr; gap:66px; align-items:start; } .evidence-quote { padding:32px; border-top:3px solid var(--green); background:var(--ice); } .evidence-quote p { margin:0; color:#224451; font:500 22px/1.42 Manrope,sans-serif; } .evidence-quote small { display:block; margin-top:21px; color:var(--muted); font:500 10px/1.5 "DM Mono",monospace; } .evidence-list { border-top:1px solid var(--line); } .evidence-list details { border-bottom:1px solid var(--line); padding:20px 0; } summary { position:relative; padding-right:32px; cursor:pointer; list-style:none; font-weight:700; font-size:16px; } summary::-webkit-details-marker { display:none; } summary::after { position:absolute; top:-4px; right:0; color:var(--blue); content:"+"; font-size:25px; font-weight:400; } details[open] summary::after { content:"−"; } details p { margin:13px 0 0; color:var(--muted); font-size:14px; line-height:1.65; }
+      .channel { padding-bottom:0; } .channel-top { display:grid; grid-template-columns:1fr 1fr; gap:70px; align-items:end; } .channel-cards { display:grid; grid-template-columns:1.05fr .95fr 1fr; gap:1px; margin-top:47px; background:var(--line); } .channel-card { min-height:285px; padding:28px; background:var(--paper); } .channel-card:nth-child(2) { background:#dceded; } .channel-card:nth-child(3) { background:var(--ink); color:white; } .channel-index { display:block; color:var(--blue); font:500 10px/1 "DM Mono",monospace; } .channel-card:nth-child(3) .channel-index { color:var(--green); } .channel-card h3 { margin:53px 0 10px; font:700 23px/1.12 Manrope,sans-serif; } .channel-card p { margin:0; color:var(--muted); font-size:14px; line-height:1.6; } .channel-card:nth-child(3) p { color:#c4d7da; }
+      .contact { padding:100px 0; background:#c5e1df; } .contact-layout { display:grid; grid-template-columns:.8fr 1.2fr; gap:72px; align-items:start; } .contact-copy h2 { max-width:430px; } .contact-copy p:not(.eyebrow) { max-width:400px; color:#42636a; font-size:16px; line-height:1.68; } .contact-points { display:grid; gap:12px; margin-top:29px; } .contact-points span { display:block; border-left:2px solid var(--blue); padding-left:12px; color:#365760; font-size:13px; line-height:1.45; } .form { display:grid; grid-template-columns:1fr 1fr; gap:14px; padding:29px; border-radius:6px; background:white; box-shadow:0 16px 42px rgba(16,69,79,.14); } .form label { display:grid; gap:7px; color:#42616b; font:500 10px/1 "DM Mono",monospace; letter-spacing:.05em; text-transform:uppercase; } .form .wide { grid-column:1/-1; } .form input,.form select,.form textarea { width:100%; border:1px solid #c9dbdd; border-radius:3px; padding:12px; color:var(--ink); background:#fcffff; font-size:14px; outline:0; } .form textarea { min-height:104px; resize:vertical; } .form input:focus,.form select:focus,.form textarea:focus { border-color:var(--blue); box-shadow:0 0 0 3px rgba(11,107,158,.12); } .form-message { display:none; grid-column:1/-1; margin:0; color:#05694f; font-weight:700; font-size:14px; } .form-message.visible { display:block; }
+      footer { padding:38px 0; color:#bcd0d2; background:#061823; } .footer-row { display:flex; align-items:center; justify-content:space-between; gap:22px; } .footer-row .brand-mark { border-color:#bcd0d2; } .footer-row .brand-name { color:white; } .footer-row .brand-sub { color:#87a9af; } .footer-note { max-width:620px; margin:0; font-size:11px; line-height:1.55; text-align:right; }
+      .reveal { opacity:0; transform:translateY(18px); transition:opacity .65s ease,transform .65s ease; } .reveal.in { opacity:1; transform:none; }
+      @media (max-width:960px) { .container { width:min(620px,calc(100% - 34px)); } .desktop-nav,.nav > .btn { display:none; } .menu-button { display:block; } .mobile-menu { position:absolute; top:68px; width:100%; padding:18px 20px 23px; background:#071b29; } .mobile-menu.open { display:grid; gap:17px; } .mobile-menu a { color:white; font-weight:700; } .nav { min-height:68px; border:0; } .hero { min-height:720px; padding:120px 0 42px; } .hero-main,.intro-grid,.range-top,.product-stage,.selection-grid,.evidence-layout,.channel-top,.contact-layout { grid-template-columns:1fr; gap:32px; } .hero h1 { max-width:100%; } .hero-card { max-width:360px; } .hero-foot { margin-top:36px; } .hero-foot div { min-width:0; width:50%; padding:15px 12px 0 0; } .hero-foot div + div { padding-left:12px; } section { padding:76px 0; } .tabs { justify-content:flex-start; } .product-stage { min-height:0; } .product-visual { min-height:350px; } .spec-panel { padding:32px 25px; } .series-strip { grid-template-columns:1fr; } .selection-card { padding:25px; } .channel-cards { grid-template-columns:1fr; } .channel-card { min-height:215px; } .channel-card h3 { margin-top:34px; } .footer-row { align-items:flex-start; flex-direction:column; } .footer-note { text-align:left; } }
+      @media (max-width:520px) { .container { width:calc(100% - 28px); } .hero { min-height:690px; background-position:62% center; } .hero h1 { font-size:43px; } .hero-copy p { font-size:16px; } .hero-actions .btn { width:100%; } .hero-foot div { width:100%; } .hero-foot div + div { padding-left:0; border-left:0; } .product-visual { min-height:315px; padding:24px; } .product-meta h3 { font-size:34px; } .heat-pump { right:5%; bottom:48px; width:50%; } .spec-grid,.check-list,.form { grid-template-columns:1fr; } .form .wide { grid-column:auto; } .tabs { gap:5px; } .tab { padding:0 9px; } .contact { padding:70px 0; } }
+      @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } *,*::before,*::after { transition:none!important; animation:none!important; } .reveal { opacity:1; transform:none; } }
     </style>
   </head>
   <body>
-    <header class="site-header">
-      <div class="container nav">
-        <a class="brand" href="#top" aria-label="Naturaquell home">
-          <span class="brand-mark">NQ</span>
-          <span><span class="brand-name">Naturaquell</span><span class="brand-sub">Pool Heat Pumps</span></span>
-        </a>
-        <nav class="desktop-nav" aria-label="Primary navigation">
-          <a href="#products">Products</a><a href="#technology">Technology</a><a href="#about">About</a><a href="#contact">Contact</a>
-        </nav>
-        <a class="btn btn-light" href="#contact">Request a quote</a>
-        <button class="nav-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">☰</button>
-      </div>
-      <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
-        <a href="#products">Products</a><a href="#technology">Technology</a><a href="#about">About</a><a href="#contact">Contact</a>
-      </nav>
-    </header>
-
+    <header class="site-header"><div class="container nav"><a class="brand" href="#top" aria-label="Naturaquell home"><span class="brand-mark">NQ</span><span><span class="brand-name">Naturaquell</span><span class="brand-sub">Pool heat pumps</span></span></a><nav class="desktop-nav" aria-label="Primary navigation"><a href="#range">Range</a><a href="#selection">Selection logic</a><a href="#evidence">Data boundaries</a><a href="#partners">Partners</a></nav><a class="btn btn-primary" href="#contact">Start an inquiry <span class="arrow">→</span></a><button class="menu-button" id="menuButton" aria-label="Open menu" aria-expanded="false">☰</button></div><nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation"><a href="#range">Range</a><a href="#selection">Selection logic</a><a href="#evidence">Data boundaries</a><a href="#partners">Partners</a><a href="#contact">Start an inquiry</a></nav></header>
     <main id="top">
-      <section class="hero">
-        <div class="container hero-content">
-          <h1 class="display">Residential pool comfort, built for global partners.</h1>
-          <p>Naturaquell presents a focused residential pool heat pump portfolio for distributors, pool builders, and project teams seeking a clear, premium B2B offer.</p>
-          <div class="hero-actions"><a class="btn btn-primary" href="#products">Explore products</a><a class="btn btn-outline" href="#contact">Talk to our team</a></div>
-          <div class="hero-proof"><span>Residential pool applications</span><span>Distributor-ready product range</span><span>Global B2B inquiry path</span><span>Technical matching support</span></div>
-        </div>
-      </section>
-
-      <section id="products">
-        <div class="container">
-          <div class="section-heading">
-            <div><p class="eyebrow">Product portfolio</p><h2 class="display">A clear range for residential pool markets.</h2></div>
-            <p class="section-intro">Position the right series for each buyer segment, from flagship inverter solutions to compact units for smaller pool installations.</p>
-          </div>
-          <div class="product-grid">
-            <article class="product-card"><div class="product-image"><img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=900&q=82" alt="Private residential pool setting" /><span class="series-tag">F1</span></div><div class="product-content"><h3>F1 BLACK / RED</h3><p>Flagship residential series for partners building a premium, design-led pool heating offer.</p><ul class="product-list"><li>Residential inverter positioning</li><li>Flagship series presentation</li><li>Dealer and project applications</li></ul><a class="text-link" href="#contact">Request series information</a></div></article>
-            <article class="product-card"><div class="product-image"><img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=900&q=82" alt="Resort pool setting" /><span class="series-tag">STONE</span></div><div class="product-content"><h3>STONE</h3><p>Architectural pool equipment positioning for home environments where the visual finish matters.</p><ul class="product-list"><li>Residential pool environments</li><li>Architectural exterior concept</li><li>Professional installation channel</li></ul><a class="text-link" href="#contact">Request series information</a></div></article>
-            <article class="product-card"><div class="product-image"><img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=900&q=82" alt="Private villa pool setting" /><span class="series-tag">EYES</span></div><div class="product-content"><h3>EYES</h3><p>Smart-living oriented series for buyers who value a modern pool experience and convenient daily control.</p><ul class="product-list"><li>Connected-home product story</li><li>Residential upgrade projects</li><li>Retail-friendly communication</li></ul><a class="text-link" href="#contact">Request series information</a></div></article>
-            <article class="product-card"><div class="product-image"><img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=900&q=82" alt="Outdoor leisure pool setting" /><span class="series-tag">MINI</span></div><div class="product-content"><h3>WATER / MINI</h3><p>Compact residential positioning for smaller pools, starter catalog ranges, and straightforward replacements.</p><ul class="product-list"><li>Compact pool applications</li><li>Entry-level catalog option</li><li>Residential replacement path</li></ul><a class="text-link" href="#contact">Request series information</a></div></article>
-          </div>
-        </div>
-      </section>
-
-      <section class="tech" id="technology">
-        <div class="container tech-layout">
-          <div class="tech-copy"><p class="eyebrow">Technology story</p><h2 class="display">Turn technical decisions into clear buyer value.</h2><p>Good B2B product communication makes it easier for a distributor or pool builder to qualify a project, compare options, and start a serious inquiry.</p></div>
-          <div class="tech-points">
-            <div class="tech-point"><b>Inverter positioning</b><span>Frame the range around steady pool comfort and considered seasonal operation.</span></div>
-            <div class="tech-point"><b>Quiet-living focus</b><span>Support the homeowner story with poolside comfort as a central buying consideration.</span></div>
-            <div class="tech-point"><b>Project matching</b><span>Use climate, pool size, voltage, and installation context to guide a suitable discussion.</span></div>
-            <div class="tech-point"><b>Partner enablement</b><span>Give dealers an organized page they can share with customers and contractors.</span></div>
-          </div>
-        </div>
-      </section>
-
-      <section class="application">
-        <div class="container application-layout">
-          <div class="application-media"><img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=1500&q=85" alt="Residential pool and outdoor living space" /></div>
-          <div><p class="eyebrow">Applications</p><h2 class="display">Designed around the residential pool buyer journey.</h2><div class="application-list"><div class="application-item"><span class="application-num">01</span><div><b>Pool equipment distributors</b><span>Build a concise portfolio for sales teams and dealer channels.</span></div></div><div class="application-item"><span class="application-num">02</span><div><b>Pool builders and installers</b><span>Start every conversation with the project context, not a generic product list.</span></div></div><div class="application-item"><span class="application-num">03</span><div><b>Villa and resort projects</b><span>Present a clear residential pool comfort solution with a premium visual language.</span></div></div><div class="application-item"><span class="application-num">04</span><div><b>Replacement opportunities</b><span>Give existing pool owners and installers a simple route to product matching.</span></div></div></div></div>
-        </div>
-      </section>
-
-      <section id="about">
-        <div class="container about-layout">
-          <div class="about-art"><img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=1400&q=85" alt="Premium outdoor water and wellness environment" /></div>
-          <div class="about-copy"><p class="eyebrow">About Naturaquell</p><h2 class="display">A focused B2B presentation for pool comfort solutions.</h2><p>This website is designed to help international partners understand the product family, identify the right application, and begin a qualified conversation with the team.</p><div class="principles"><div class="principle"><b>Clear portfolio</b><span>Series-level information that is easy to scan.</span></div><div class="principle"><b>Practical fit</b><span>Start with application needs and project context.</span></div><div class="principle"><b>Partner path</b><span>A direct route from product interest to inquiry.</span></div></div></div>
-        </div>
-      </section>
-
-      <section class="faq">
-        <div class="container faq-layout"><div><p class="eyebrow">FAQ</p><h2 class="display">Questions before a project inquiry.</h2></div><div><details open><summary>Who is this product range for?</summary><p>The site is structured for distributors, pool builders, project teams, and other B2B buyers evaluating residential pool heat pump options.</p></details><details><summary>What information should a partner prepare?</summary><p>Target country, pool size range, climate, preferred voltage, project type, estimated quantity, and any compliance requirements help prepare a useful discussion.</p></details><details><summary>How are models selected?</summary><p>Selection should be confirmed with the official technical documentation and project conditions before quotation or installation.</p></details><details><summary>Can the inquiry form be connected to a CRM?</summary><p>Yes. Before launch, connect the form to a Hostinger form endpoint, email service, WhatsApp workflow, or your CRM so that submitted inquiries are delivered to the sales team.</p></details></div></div>
-      </section>
-
-      <section class="contact" id="contact">
-        <div class="container contact-layout"><div class="contact-copy"><p class="eyebrow">Start a conversation</p><h2 class="display">Request pool heat pump information.</h2><p>Tell us your target market, product interest, and project requirements. We will use this information to prepare the right next step.</p></div><form class="form" id="inquiryForm"><label>Name<input required name="name" autocomplete="name" /></label><label>Email or WhatsApp<input required name="contact" autocomplete="email" /></label><label>Country<input required name="country" /></label><label>Product interest<select required name="product"><option value="">Choose a series</option><option>F1 BLACK / RED</option><option>STONE</option><option>EYES</option><option>WATER / MINI</option><option>General inquiry</option></select></label><label class="full">Project details<textarea required name="message" placeholder="Pool size, climate, voltage, project type, and estimated quantity."></textarea></label><button class="btn btn-primary" type="submit">Prepare inquiry</button><p class="form-message" id="formMessage" role="status">Thank you. Please connect this form to your Hostinger email or CRM endpoint before publishing so sales inquiries can be delivered.</p></form></div>
-      </section>
+      <section class="hero"><div class="container"><div class="hero-main"><div class="hero-copy"><p class="eyebrow" style="color:var(--cyan)">Residential pool heating, B2B-ready</p><h1 class="display">A pool heat pump range made for the decisions behind the install.</h1><p>Model-led information for distributors, pool builders and installation partners. Start with climate, water flow, electrical version and the final project, then narrow the right heat pump.</p><div class="hero-actions"><a class="btn btn-primary" href="#range">Explore the range <span class="arrow">→</span></a><a class="btn btn-ghost" href="#contact">Discuss a project</a></div></div><aside class="hero-card" aria-label="Portfolio snapshot"><div class="hero-card-head"><span>Portfolio snapshot</span><span class="live-dot" aria-hidden="true"></span></div><div class="hero-stat"><strong>5.42–34.50</strong><span>kW declared heating capacity across the available model range and stated test points.</span></div><div class="hero-card-grid"><div><b>R32</b><span>Listed for the product range</span></div><div><b>IPX4</b><span>Listed for the product range</span></div></div></aside></div><div class="hero-foot"><div><b>6 core capacity grades</b><span>009 to 031 main range</span></div><div><b>Heating & cooling</b><span>Main series only, per stated data</span></div><div><b>Project-first inquiry</b><span>Selection before quotation</span></div></div></div></section>
+      <section class="intro-band"><div class="container intro-grid reveal"><h2 class="display">Better product conversations start with the conditions, not just a headline number.</h2><p>Capacity and COP move with air conditions, water temperatures, flow and operating mode. <strong>We present the rating point alongside each value</strong>, so a technical review can begin from a shared reference.</p></div></section>
+      <section id="range"><div class="container"><div class="range-top reveal"><div><p class="eyebrow">Product range</p><h2 class="display">One selection platform. Six capacity grades.</h2><p class="section-copy">The main series share a six-grade data table. Choose a grade to review the declared heating range, electrical and hydraulic reference points.</p></div><div class="tabs" role="tablist" aria-label="Model grade selector"><button class="tab active" data-model="009" role="tab" aria-selected="true">009</button><button class="tab" data-model="011" role="tab">011</button><button class="tab" data-model="013" role="tab">013</button><button class="tab" data-model="017" role="tab">017</button><button class="tab" data-model="023" role="tab">023</button><button class="tab" data-model="031" role="tab">031</button></div></div><div class="product-stage reveal"><div class="product-visual"><div class="product-meta"><p id="visualLabel">Main series / grade 009</p><h3 id="visualName">F1 / STONE / EYES</h3><span id="visualText">Exterior series names listed with the same declared main-range data table.</span></div><div class="heat-pump" aria-hidden="true"><div class="fan"></div><div class="screen"></div><div class="slat"></div><div class="leg"></div><div class="leg"></div></div></div><div class="spec-panel"><p class="spec-kicker" id="specKicker">Grade 009 / Main series</p><h3 id="specTitle">Declared performance reference</h3><p id="specIntro">Heating data are presented at the brochure's stated warm-air test condition.</p><div class="spec-grid"><div><span>Heating capacity</span><b id="heating">9.32–1.86 kW</b></div><div><span>Heating COP</span><b id="cop">14.80–5.05</b></div><div><span>Rated flow</span><b id="flow">23.70 GPM</b></div><div><span>Noise listed</span><b id="noise">48 dB(A)</b></div></div><p class="test-note" id="testNote">Heating condition 1: air 78.8°F, RH 80%, entering water 78.8°F, leaving water 82.4°F. Final model specification always governs.</p></div></div><div class="series-strip reveal"><div><h3>Available exterior series</h3><p>F1 BLACK / F1 RED, STONE and EYES are listed with the main six capacity grades. Final SKU, documentation and market version require confirmation before release.</p></div><div class="series-names"><span>F1 BLACK</span><span>F1 RED</span><span>STONE</span><span>EYES</span><span>WATER 5.2</span></div></div></div></section>
+      <section class="selection" id="selection"><div class="container selection-grid"><div class="reveal"><p class="eyebrow">Selection logic</p><h2 class="display">Turn an inquiry into a workable project brief.</h2><p class="section-copy">A pool heat pump must be considered alongside the pool, its climate and the circulation system. The same capacity grade is not a universal answer.</p><div class="selection-steps"><div class="selection-step"><strong>01</strong><div><b>Set the pool objective</b><span>Separate first warm-up from holding temperature through the season.</span></div></div><div class="selection-step"><strong>02</strong><div><b>Map site heat loss</b><span>Pool surface, cover use, wind exposure, target temperature and swim season all matter.</span></div></div><div class="selection-step"><strong>03</strong><div><b>Verify the installation path</b><span>Confirm actual flow, electrical supply, space, drainage and final model documents.</span></div></div></div></div><aside class="selection-card reveal"><h3>Project information that makes a quotation useful</h3><p>These fields help a partner start technical qualification. They do not replace a final model-specific installation review.</p><div class="check-list"><div><b>Pool & use</b><span>Volume, surface, cover, target water temperature, swim months.</span></div><div><b>Climate & site</b><span>City, low ambient, wind exposure, pad layout and nearby walls.</span></div><div><b>Hydraulics</b><span>Actual circulation flow, filter condition, pipe arrangement and water treatment.</span></div><div><b>Electrical</b><span>Voltage, frequency, available protection and local installation rules.</span></div><div><b>Channel route</b><span>Distributor, builder, installer, project buyer or private-label program.</span></div><div><b>Market pack</b><span>Destination market, final SKU, labels, manual and required project files.</span></div></div></aside></div></section>
+      <section id="evidence"><div class="container evidence-layout"><div class="reveal"><p class="eyebrow">Data boundaries</p><h2 class="display">The useful disclaimer is part of the product story.</h2><p class="section-copy">Instead of promising identical results in every pool, we show the practical boundaries that should be resolved before a final recommendation.</p><div class="evidence-quote"><p>“A catalog value becomes meaningful only when its model and test condition travel with it.”</p><small>Performance review principle for technical quotations</small></div></div><div class="evidence-list reveal"><details open><summary>Why the listed COP is not a yearly operating-cost promise</summary><p>COP is a ratio at a stated point. Air temperature, humidity, water temperature, flow and part-load control can change it. Compare values only where the conditions and definitions match.</p></details><details><summary>Why a dB(A) figure is not a site-noise guarantee</summary><p>The product table lists a noise value, but the measurement distance and operating mode are not stated. Local geometry, reflections, mode and placement also affect the installation result.</p></details><details><summary>Why water connection size cannot replace a flow check</summary><p>Main grades list a 1.97-inch water connection, yet the required flow is grade-specific. Pump performance, filtration, pipe resistance and bypass arrangement all need review.</p></details><details><summary>Why refrigerant and compliance need a final-market check</summary><p>The product data list R32 and GWP 675 for the range. Market legality, final charge, labeling, handling and servicing obligations must be confirmed for the final model and destination.</p></details></div></div></section>
+      <section class="channel" id="partners"><div class="container"><div class="channel-top reveal"><div><p class="eyebrow">Channel focus</p><h2 class="display">Different partners need different first answers.</h2></div><p class="section-copy">The inquiry route changes the technical and commercial questions that matter. A distributor's stock plan, a builder's site fit and an installer's start-up path should not be treated as the same conversation.</p></div><div class="channel-cards reveal"><article class="channel-card"><span class="channel-index">01 / DISTRIBUTION</span><h3>Line review with fewer blind spots.</h3><p>Start with target markets, stock model, document needs, warranty triage and who supports the channel after installation.</p></article><article class="channel-card"><span class="channel-index">02 / BUILD & REMODEL</span><h3>Specify around the site, not the brochure.</h3><p>Use pool volume, cover use, target temperature, pad layout, neighbours and power supply to shape the first recommendation.</p></article><article class="channel-card"><span class="channel-index">03 / INSTALL & SERVICE</span><h3>Make startup evidence part of the handover.</h3><p>Verify flow, filtration, wiring, drainage and the safe shutdown response before a project turns into a return visit.</p></article></div></div></section>
+      <section class="contact" id="contact"><div class="container contact-layout"><div class="contact-copy reveal"><p class="eyebrow">Start an inquiry</p><h2 class="display">Bring the project context. We will start from the right questions.</h2><p>Use this form to begin a product or programme discussion. It is a front-end inquiry draft in this version; final commercial terms, market documents and model selection remain subject to confirmation.</p><div class="contact-points"><span>For main series data: choose a grade and include the intended electrical version.</span><span>For WATER 5.2: its brochure data list heating only, not cooling performance.</span><span>For any market: final SKU documents and local requirements must be reviewed.</span></div></div><form class="form reveal" id="inquiryForm"><label>Name<input required name="name" autocomplete="name" placeholder="Your name" /></label><label>Business email / WhatsApp<input required name="contact" autocomplete="email" placeholder="name@company.com" /></label><label>Country / market<input required name="country" autocomplete="country-name" placeholder="Destination market" /></label><label>Buyer role<select required name="role"><option value="">Select role</option><option>Distributor / importer</option><option>Pool builder / remodeler</option><option>Installer / service company</option><option>Project buyer</option><option>Private-label brand</option><option>Other</option></select></label><label class="wide">Product interest<select required name="product"><option value="">Select product or topic</option><option>Main series 009–031</option><option>F1 BLACK / F1 RED</option><option>STONE / EYES</option><option>WATER 5.2</option><option>Portfolio / market discussion</option></select></label><label class="wide">Project details<textarea required name="message" placeholder="Pool type, project context, climate, target capacity or programme requirements"></textarea></label><button class="btn btn-dark wide" type="submit">Prepare inquiry <span class="arrow">→</span></button><p class="form-message" id="formMessage" role="status">Inquiry draft ready. Connect this form to your email or CRM before publishing it live.</p></form></div></section>
     </main>
-
-    <footer><div class="container footer-row"><a class="brand" href="#top"><span class="brand-mark">NQ</span><span><span class="brand-name">Naturaquell</span><span class="brand-sub">Pool Heat Pumps</span></span></a><div class="footer-links"><a href="#products">Products</a><a href="#technology">Technology</a><a href="#about">About</a><a href="#contact">Contact</a></div><span>© <span id="year"></span> Naturaquell</span></div></footer>
-
+    <footer><div class="container footer-row"><a class="brand" href="#top"><span class="brand-mark">NQ</span><span><span class="brand-name">Naturaquell</span><span class="brand-sub">Pool heat pumps</span></span></a><p class="footer-note">Product values shown are from the available sanitized product data and stated test conditions. Final SKU, documents, performance, market compliance and installation requirements must be confirmed before quotation or release.</p></div></footer>
     <script>
-      const toggle = document.getElementById('menuToggle');
-      const menu = document.getElementById('mobileMenu');
-      toggle.addEventListener('click', () => {
-        const open = menu.classList.toggle('open');
-        toggle.setAttribute('aria-expanded', String(open));
-        toggle.textContent = open ? '×' : '☰';
-      });
-      document.querySelectorAll('.mobile-menu a').forEach((link) => link.addEventListener('click', () => {
-        menu.classList.remove('open'); toggle.setAttribute('aria-expanded', 'false'); toggle.textContent = '☰';
+      const models = {
+        "009": { heat:"9.32–1.86 kW", cop:"14.80–5.05", flow:"23.70 GPM", noise:"48 dB(A)", power:"110–120V / 60Hz", size:"32.9 × 13.2 × 23.4 in" },
+        "011": { heat:"11.96–2.39 kW", cop:"16.00–6.18", flow:"29.80 GPM", noise:"50 dB(A)", power:"110–120V / 60Hz", size:"36.4 × 15.0 × 25.3 in" },
+        "013": { heat:"14.80–2.96 kW", cop:"16.00–6.11", flow:"37.60 GPM", noise:"52 dB(A)", power:"208–230V / 50Hz (60Hz)", size:"36.4 × 15.0 × 25.3 in" },
+        "017": { heat:"18.66–3.73 kW", cop:"16.00–5.71", flow:"47.30 GPM", noise:"54 dB(A)", power:"208–230V / 50Hz (60Hz)", size:"36.4 × 15.0 × 25.3 in" },
+        "023": { heat:"25.85–5.17 kW", cop:"16.00–5.35", flow:"65.50 GPM", noise:"56 dB(A)", power:"208–230V / 50Hz (60Hz)", size:"42.7 × 15.7 × 29.0 in" },
+        "031": { heat:"34.50–6.90 kW", cop:"16.00–4.88", flow:"87.50 GPM", noise:"58 dB(A)", power:"208–230V / 50Hz (60Hz)", size:"41.6 × 15.8 × 29.1 in" }
+      };
+      const $ = (id) => document.getElementById(id);
+      document.querySelectorAll('.tab').forEach((tab) => tab.addEventListener('click', () => {
+        const grade = tab.dataset.model, data = models[grade];
+        document.querySelectorAll('.tab').forEach((item) => { item.classList.toggle('active', item === tab); item.setAttribute('aria-selected', item === tab ? 'true' : 'false'); });
+        $('visualLabel').textContent = `Main series / grade ${grade}`;
+        $('specKicker').textContent = `Grade ${grade} / Main series`;
+        $('heating').textContent = data.heat; $('cop').textContent = data.cop; $('flow').textContent = data.flow; $('noise').textContent = data.noise;
+        $('specIntro').textContent = `Power reference: ${data.power}. Cabinet reference: ${data.size}.`;
       }));
-      document.getElementById('year').textContent = new Date().getFullYear();
-      document.getElementById('inquiryForm').addEventListener('submit', (event) => {
-        event.preventDefault();
-        document.getElementById('formMessage').classList.add('visible');
-      });
+      const button = $('menuButton'), menu = $('mobileMenu');
+      button.addEventListener('click', () => { const open = menu.classList.toggle('open'); button.setAttribute('aria-expanded', String(open)); button.textContent = open ? '×' : '☰'; });
+      menu.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => { menu.classList.remove('open'); button.setAttribute('aria-expanded','false'); button.textContent='☰'; }));
+      $('inquiryForm').addEventListener('submit', (event) => { event.preventDefault(); $('formMessage').classList.add('visible'); });
+      if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) { const observer = new IntersectionObserver((entries) => entries.forEach((entry) => { if (entry.isIntersecting) { entry.target.classList.add('in'); observer.unobserve(entry.target); } }), { threshold:.12 }); document.querySelectorAll('.reveal').forEach((element) => observer.observe(element)); }
+      else { document.querySelectorAll('.reveal').forEach((element) => element.classList.add('in')); }
     </script>
   </body>
 </html>
