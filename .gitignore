@@ -4,3 +4,4 @@
 .siteops/hostinger.env
 .dev.vars
 wrangler.toml
+.wrangler
