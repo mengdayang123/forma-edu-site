@@ -29,11 +29,22 @@ npx wrangler pages deploy . --project-name forma-edu
 
 ## 可选的免费后台：Cloudflare D1
 
-1. 在 Cloudflare `Workers & Pages` 中创建 D1 database。
-2. 执行 `schema.sql`。
-3. 将数据库绑定变量命名为 `DB`，绑定到 Pages 项目的 Functions。
-4. 使用 Git integration 或 Wrangler 部署，确保 `functions/` 目录一起发布。
-5. 后台可先使用 Cloudflare D1 控制台查看询盘；需要可视化管理页面时，再增加受保护的 `/admin` 页面。
+1. 在 Cloudflare `Workers & Pages` 中创建 Pages 项目，项目名使用 `forma-edu-site`。
+2. 在本地复制 `wrangler.toml.example` 为 `wrangler.toml`。
+3. 执行 `npx wrangler d1 create forma-edu-inquiries`，把返回的 `database_id` 写入 `wrangler.toml`。
+4. 执行 `npx wrangler d1 execute forma-edu-inquiries --remote --file=schema.sql`。
+5. 在 Pages 项目的 Settings → Functions → D1 database bindings 中绑定 `DB`。
+6. 在 Pages 项目的 Settings → Variables and Secrets 中设置：`ADMIN_PASSWORD`、`ADMIN_SECRET`。两者都选择 Secret，不要放在普通变量或代码中。
+7. 执行 `npx wrangler pages deploy . --project-name forma-edu-site`，确保 `functions/`、`admin/` 和 `assets/` 一起发布。
+8. 打开 `https://你的项目.pages.dev/admin/`，使用 `ADMIN_PASSWORD` 登录询盘后台。
+
+后台文件：
+
+- `admin/index.html`：管理员界面
+- `functions/api/admin/login.js`：HttpOnly 登录会话
+- `functions/api/admin/inquiries.js`：询盘列表和状态更新
+- `functions/api/admin/session.js`：登录状态检查
+- `schema.sql`：D1 表结构
 
 不要把 D1 管理令牌或任何服务器密钥写进 `index.html`。正式收集前还应加入 Turnstile、隐私政策和数据保留规则。
 

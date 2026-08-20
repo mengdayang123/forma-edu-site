@@ -1,0 +1,11 @@
+name = "forma-edu-site"
+pages_build_output_dir = "."
+compatibility_date = "2026-08-20"
+
+# After `wrangler d1 create forma-edu-inquiries`, replace DATABASE_ID below
+# with the returned id and rename this file to wrangler.toml.
+[[d1_databases]]
+binding = "DB"
+database_name = "forma-edu-inquiries"
+database_id = "REPLACE_WITH_D1_DATABASE_ID"
+

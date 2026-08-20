@@ -2,3 +2,5 @@
 .qa/
 .siteops/stage/
 .siteops/hostinger.env
+.dev.vars
+wrangler.toml
